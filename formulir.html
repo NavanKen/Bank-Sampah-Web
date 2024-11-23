@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Sampah</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <a href="index.html" class="logo text-decoration-none"
+          >Bank<span>Sampah</span></a
+        >
+        <ul class="navbar">
+          <li>
+            <a class="text-decoration-none" href="index.html#home">Home</a>
+          </li>
+          <li>
+            <a class="text-decoration-none" href="index.html#photo">Photo</a>
+          </li>
+          <li>
+            <a class="text-decoration-none" href="index.html#about">About</a>
+          </li>
+          <li>
+            <a class="text-decoration-none" href="index.html#product"
+              >Product</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none" href="index.html#pesan">Pesan</a>
+          </li>
+        </ul>
+        <i class="bx bx-search" id="search-icon"></i>
+        <div class="search-box container">
+          <input type="search" name="" id="" placeholder="Cari Disini..." />
+        </div>
+        <marquee behavior="scroll" direction="left">
+          Buanglah sampah pada tempat yang disediakan :>
+        </marquee>
+      </div>
+    </header>
+    <div class="formulir">
+      <form
+        action="https://script.google.com/macros/s/AKfycbwQC265aeYFbj22Gr9q6BwaqFduNuFtc3AvdPoJpbY6O14t3CMlegVPkYWWqwPXC2It/exec"
+        id="student-form"
+        name="pesan-form"
+        class="row justify-content-center mb-4"
+        autocomplete="off"
+        method="post"
+      >
+        <div class="col-10 mb-3 text-center">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="col-10 mb-3">
+          <label for="yourname">Nama Anda</label>
+          <input
+            class="form-control"
+            id="namaanda"
+            name="Nama User"
+            type="text"
+            placeholder="Masukkan Nama Anda"
+          />
+        </div>
+        <div class="col-10 mb-3">
+          <label for="alamat">Email</label>
+          <input
+            class="form-control"
+            id="alamat"
+            type="email"
+            name="Email"
+            placeholder="Masukkan Email Anda"
+          />
+        </div>
+        <div class="col-10 mb-3">
+          <label for="nomorhp">Nomor HP</label>
+          <input
+            class="form-control"
+            id="nomorhp"
+            name="No Hp"
+            type="text"
+            placeholder="Masukkan Nomor HP Anda"
+          />
+        </div>
+        <div class="col-10 mb-3">
+          <label for="nomorhp">Pesan</label>
+          <textarea
+            class="form-control"
+            id="pesan"
+            name="Pesan"
+            type="text"
+            placeholder="Masukkan kritik dan saran anda"
+          ></textarea>
+        </div>
+        <div class="col-10">
+          <input class="btn btn-success add-btn" type="submit" value="Submit" />
+        </div>
+      </form>
+
+      <!-- <div class="last_row">
+              <div class="row row-cols-1 row-cols-3 p-3 text-white">
+                  <div class="col">
+                      <h4>Call Us</h4>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas eius dignissimos earum.</p>
+                  </div>
+                  <div class="col">
+                      <h4>Call Us</h4>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas eius dignissimos earum.</p>
+                  </div>
+                  <div class="col">
+                      <h4>Call Us</h4>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas eius dignissimos earum.</p>
+                  </div>
+              </div>
+          </div> -->
+    </div>
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">
+              Pesan Sudah Terkirim
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Terima kasih banyak atas saran dan pesan yang diberikan, ini menjadi
+            masukan berharga untuk pengembangan aplikasi ke depannya!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      aria-labelledby="errorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="errorModalLabel">Kesalahan</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Mohon isi semua field sebelum mengirimkan formulir.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

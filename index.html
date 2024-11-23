@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Sampah</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <a href="index.html" class="logo text-decoration-none"
+          >Bank<span>Sampah</span></a
+        >
+        <ul class="navbar">
+          <li><a class="text-decoration-none" href="#home">Home</a></li>
+          <li><a class="text-decoration-none" href="#photo">Photo</a></li>
+          <li><a class="text-decoration-none" href="#about">About</a></li>
+          <li><a class="text-decoration-none" href="#product">Product</a></li>
+          <li>
+            <a class="text-decoration-none" href="formulir.html">Pesan</a>
+          </li>
+        </ul>
+        <i class="bx bx-search" id="search-icon"></i>
+        <div class="search-box container">
+          <input type="search" name="" id="" placeholder="Cari Disini..." />
+        </div>
+        <marquee behavior="scroll" direction="left"
+          >Buanglah sampah pada tempat yang disediakan :></marquee
+        >
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>
+          Kita Menyediakan Berbagai <br /><span>Sampah</span> Yang Dikumpulkan.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Accusamus, cumque perspiciatis qui nemo laborum
+        </p>
+        <a href="#about" class="text-decoration-none btn btn-success"
+          >Discover Now</a
+        >
+      </div>
+    </section>
+
+    <section class="photo" id="photo">
+      <div class="heading">
+        <span>Live Reports</span>
+        <h2>Foto - foto kita</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="photo-container container">
+        <div class="box">
+          <img src="img/main.jpg" alt="" />
+        </div>
+        <div class="box">
+          <img src="img/jonathan-chng-OTDyDgPoJ_0-unsplash.jpg" alt="" />
+        </div>
+        <div class="box">
+          <img src="img/hans-ripa-7FOrFt89XnA-unsplash.jpg" alt="" />
+        </div>
+        <div class="box">
+          <img src="img/jason-ng-F8SF6gsoVBM-unsplash.jpg" alt="" />
+        </div>
+        <div class="box">
+          <img src="img/julio-lopez-HNP6rOD_MkE-unsplash.jpg" alt="" />
+        </div>
+        <div class="box">
+          <img src="img/nick-fewings--2lJGRIY5P0-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <div class="about-img">
+        <img
+          src="img/pngtree-cute-3d-vector-trash-can-png-image_12360532.png"
+          alt=""
+        />
+      </div>
+      <div class="about-text">
+        <span>About Us</span>
+        <h2>Lets save our Earth</h2>
+        <p>
+          Dunia kita sudah tercemari oleh sampah - sampah plastik maupun logam.
+          Kita sebagai makhluk penduduk bumi harus menjaganya. Maka dari itu ayo
+          kumpulkan sampah dan dijual di Bank Sampah.
+        </p>
+      </div>
+    </section>
+
+    <!--<div class="row workingspace" id="about">
+        <div class="col-lg-6">
+            <img src="img/bamban-heru-dQfZ5aPDQyo-unsplash.jpg" alt="Workingspace" class="img-fluid">
+        </div>
+        <div class="col-lg-5 text">
+            <h3><span>Save</span> our <span>Earth</span></h3>
+            <p>Dunia kita sudah tercemari oleh sampah - sampah plastik maupun logam. Kita sebagai makhluk penduduk bumi harus menjaganya. Maka dari itu ayo kumpulkan sampah dan dijual di Bank Sampah.</p>
+        </div>
+    </div> -->
+
+    <br />
+    <br />
+    <div class="produk" id="product">
+      <h1 class="text-center judul">Produk <span>Kami</span></h1>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-5 card-container">
+        <div class="col">
+          <div class="card">
+            <img
+              src="img/produk/christa-dodoo-MldQeWmF2_g-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">KERTAS</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around mb-5">
+              <h3 class="duit">Rp.1000</h3>
+              <button class="btn btn-success buy" data-sampah="KERTAS">
+                Sell Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="img/produk/engin-akyurt-_vaAZ86LBXk-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">BOTOL PLASTIK</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around mb-5">
+              <h3 class="duit">Rp. 1000</h3>
+              <button class="btn btn-success buy" data-sampah="BOTOL PLASTIK">
+                Sell Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="img/produk/michele-kelling-WF2DSOzVSBU-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">KAIN</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around mb-5">
+              <h3 class="duit">Rp. 1500</h3>
+              <button class="btn btn-success buy" data-sampah="KAIN">
+                Sell Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="img/produk/johnny-sanchez-qcbIqgSY6Io-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">BESI</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around mb-5">
+              <h3 class="duit">Rp. 2000</h3>
+              <button class="btn btn-success buy" data-sampah="BESI">
+                Sell Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="img/produk/killari-hotaru-6ZGEQb-CxIo-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">TUTUP BOTOL</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around mb-5">
+              <h3 class="duit">Rp. 500</h3>
+              <button class="btn btn-success buy" data-sampah="TUTUP BOTOL">
+                Sell Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="img/produk/possessed-photography-JG80MshfiHo-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">PLASTIK</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around mb-5">
+              <h3 class="duit">Rp. 500</h3>
+              <button class="btn btn-success buy" data-sampah="PLASTIK">
+                Sell Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="footer-container container">
+        <div class="footer-box">
+          <a href="#" class="logo text-decoration-none"
+            >Bank<span>Sampah</span></a
+          >
+          <div class="social">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h3>Page</h3>
+          <a href="#">Home</a>
+          <a href="#photo">Photo</a>
+          <a href="#product">Product</a>
+          <a href="#about">About Us</a>
+        </div>
+        <div class="footer-box">
+          <h3>Legal</h3>
+          <a href="#">Privacy</a>
+          <a href="#">Refund Policy</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+        <div class="footer-box">
+          <h3>Contact</h3>
+          <p>Indonesia</p>
+          <p>United States</p>
+          <p>German</p>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>&copy SMKN 8 Malang All Right Reserved</p>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="crud.js"></script>
+  </body>
+</html>

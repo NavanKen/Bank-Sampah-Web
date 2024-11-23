@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Sampah</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body style="background-color: #fff; color: #1b1b1b;">
+<div class="container">
+    <div class="nav container ">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="index.html" class="logo text-decoration-none">Bank<span>Sampah</span></a>
+        <ul class="navbar">
+            <li><a class="text-decoration-none" href="index.html#home">Home</a></li>
+            <li><a class="text-decoration-none" href="index.html#photo">Photo</a></li>
+            <li><a class="text-decoration-none" href="index.html#about">About</a></li>
+            <li><a class="text-decoration-none" href="index.html#product">Product</a></li>
+            <li><a class="text-decoration-none" href="formulir.html">Pesan</a></li>
+        </ul>
+        <i class='bx bx-search' id="search-icon"></i>
+        <div class="search-box container">
+            <input type="search" name="" id="" placeholder="Cari Disini...">
+        </div>
+        <marquee
+        behavior="scroll"
+        direction="left"
+        >Buanglah sampah pada tempat yang disediakan :></marquee
+      >
+    </div>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Formulir</h1>
+        <form id="student-form" autocomplete="off">
+            <div class="mb-3">
+                <label for="yourname">Nama Anda</label>
+                <input type="text" id="yourname" class="form-control" placeholder="Masukkan Nama Anda">
+            </div>
+            <div class="mb-3">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" class="form-control" placeholder="Masukkan Alamat Anda">
+            </div>
+            <div class="mb-3">
+                <label for="nomorhp">Nomor HP</label>
+                <input type="text" id="nomorhp" class="form-control" placeholder="Masukkan Nomor HP Anda">
+            </div>
+            <div class="mb-3">
+                <label for="jenissampah">Jenis Sampah</label>
+                <input class="form-control" id="jenissampah" type="text" placeholder="Masukkan Jenis Sampah">
+            </div>
+            <div class="mb-3">
+                <label for="tanggal">Tanggal Dikirim</label>
+                <input type="date" id="tanggal" class="form-control" placeholder="Masukkan Tanggal Dikirim">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="table-responsive">
+            <table class="table mt-5 table-dark">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>Nomor HP</th>
+                        <th>Jenis Sampah</th>
+                        <th>Tanggal Dikirim</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+   
+<div class="modal fade" id="receiptModal" tabindex="-1" aria-labelledby="receiptModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="receiptModalLabel">Struk Transaksi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Nama:</strong> <span id="receipt-name"></span></p>
+                <p><strong>Alamat:</strong> <span id="receipt-address"></span></p>
+                <p><strong>Nomor HP:</strong> <span id="receipt-phone"></span></p>
+                <p><strong>Jenis Sampah:</strong> <span id="receipt-type"></span></p>
+                <p><strong>Tanggal Dikirim:</strong> <span id="receipt-date"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary" id="cetak">Cetak</button>
+            </div>
+        </div>
+    </div>
+</div>
+   
+</header>
+<script src="crud.js"></script>
+<script src="script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+        
+</body>
+</html>
